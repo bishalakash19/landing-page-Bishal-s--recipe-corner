@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector('a[href="home"]').addEventListener("click", function(event) {
+            event.preventDefault();
+            document.querySelector('.hero').scrollIntoView({ behavior: 'smooth' });
+        });
+    
+        document.querySelector('a[href="about_me"]').addEventListener("click", function(event) {
+            event.preventDefault();
+            document.querySelector('.container-about-me').scrollIntoView({ behavior: 'smooth' });
+        });
+    
+        document.querySelectorAll('a[href="recipes"], a[href="all-recipes"]').forEach(function(link) {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                document.querySelector('.section-1').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    });
+</script>
+    
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="navbar">
+                <div id="logo"></div>
+                <div class="nav_menu">
+                    <a href="home">Home</a>
+                    <a href="about_me">About me</a>
+                    <a href="recipes">Recipes</a>
+                    
+                    </div>
+            
+            </div>
+                
+            <div class="container">
+                <div class="container-grid">
+                    
+                    <div class="headline">
+                        <h1 class="display-1">
+                            Come, let's dsvor the goodness of my <span id="nutritious">nutritious.</span>
+                        </h1>
+                        <p class="subhead">Discover the art of cooking nutritious and mouthwatering dishes with me .</p>
+                        <div class="button-arrow-top">
+                            <a href="all-recipes">All Recipes
+                                <img src="6501d777e97e1de57908741e_arrow.svg" width="14px" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="img_rounded">
+                        <div class="relative-div-flex"></div>
+                    </div>
+                </div>   
+            </div>
+            <div class="sec">
+                <div class="section">
+                        <div id="feautred">Feautred on</div>
+                        <div class="section-logo">
+                                <img src="first-img.svg" width="140px">
+                                <img src="sec-img.svg" width="130px">
+                                <img src="thrid-img.svg" width="120px">
+                                <img src="fourth.svg" width="110px">
+                                
+                        </div>
+                </div>
+            </div>
+         </div>
+    </header>
+
+    <main>
+        <section class="section-1">
+            <div class="container-1">
+                <div class="flex-top">
+                    <div class="display-2">
+                        <h2>Latest <span class=green-color-second>recipes.</span></h2>
+                    </div>
+                    <div class="button-arrow-top">
+                        <a href="all-recipes">All Recipes
+                            <img src="6501d777e97e1de57908741e_arrow.svg" width="14px" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-menu">
+                    <a href="" id="tab-1">latest Recipes</a>
+                    <a href="" id="tab-2">Featured Recipes</a>
+
+                </div>
+                <div class="recipe-list">
+                    <div class="collection-item">
+                        <img src="650309c9156b5291e0e5ef98_recipe-8.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+
+                    <div class="collection-item">
+                        <img src="650308dc495b72f81474ab75_recipe-7.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="650306f8c12969ae484df413_recipe-5.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="650305cf156b5291e0e17b63_recipe-3.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="65042c49c7145b13706fd220_insta-5.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="65042c4a2dc3c15cdd271d43_insta-4.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="65042c0dda5ee049389e83b5_insta-3.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="65030d1d1aacd7ab1e8dcb84_recipe-12.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="65030cc3ac3a210133eb8d42_recipe-11.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="65030c0c36ee86c9ede7440b_recipe-10.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="65030a9572a4d48f228bc02e_recipe-9.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="650309c9156b5291e0e5ef98_recipe-8.jpg" class="recipe-image">
+                        <div class="button-info">
+                            <div class="info-flex">
+                                <img src="6502fedb9a222bda47d26832_icons8-time.png" width="27px">
+                                <p class="paragraph-0px">5min</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030090282cb8dc8d551130_account_circle_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">2 Servings</p>
+
+                            </div>
+                            <div class="info-flex">
+                                <img src="65030140cda3526d9edcd88b_signal_cellular_alt_FILL0_wght300_GRAD0_opsz24.svg" width="27px">
+                                <p class="paragraph-0px">Easy</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="recipe-bottom">
+                            <h2 class="recipe-name">Tacos avocado salsa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="button-color-text">View Recipe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <section>
+            <div class="container-about-me">
+                <div class="container-grid">
+                    
+                    <div class="headline-about-me">
+                        <div class="About-me">
+                            <h2>About <span class=green-color-second>me.</span></h2>
+                        </div>
+                        <h1 class="display-1">
+                            Bishal Neog's hourney from kitchen whiz to digital <span id="culinary-star">culinary star.</span>
+                        </h1>
+                        <p class="subhead">Discover the art of cooking nutritious and mouthwatering dishes with me .</p>
+                        <div class="learn-more">
+                            <a href="all-recipes">Lern more
+                                <img src="6501d777e97e1de57908741e_arrow.svg" width="14px" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="img_rounded">
+                        <div class="about_me-img"></div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
